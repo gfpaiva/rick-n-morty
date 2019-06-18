@@ -1,0 +1,57 @@
+{
+  "name": "rick-n-morty",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build:dev": "cross-env NODE_ENV=development webpack --config webpack.config.js --hide-modules",
+    "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "start": "cross-env NODE_ENV=development webpack-dev-server"
+  },
+  "author": {
+    "name": "Guilherme Paiva",
+    "url": "https://guilherme.dev/",
+    "email": "gf.paiva@yahoo.com.br"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfpaiva/rick-n-morty.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gfpaiva/rick-n-morty/issues"
+  },
+  "homepage": "https://github.com/gfpaiva/rick-n-morty#readme",
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "autoprefixer": "^9.6.0",
+    "babel-loader": "^8.0.6",
+    "babel-preset-react-app": "^9.0.0",
+    "cross-env": "^5.2.0",
+    "css-loader": "^3.0.0",
+    "css-mqpacker": "^7.0.0",
+    "cssnano": "^4.1.10",
+    "dotenv-webpack": "^1.7.0",
+    "file-loader": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.7.0",
+    "node-sass": "^4.12.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.34.0",
+    "webpack-cli": "^3.3.4",
+    "webpack-dev-server": "^3.7.1"
+  },
+  "dependencies": {
+    "apollo-boost": "^0.4.2",
+    "graphql": "^14.3.1",
+    "graphql-tag": "^2.10.1",
+    "normalize.css": "^8.0.1",
+    "react": "^16.8.6",
+    "react-apollo": "^2.5.6",
+    "react-dom": "^16.8.6",
+    "react-router": "^5.0.1",
+    "react-router-dom": "^5.0.1",
+    "rfs": "^8.0.4"
+  }
+}

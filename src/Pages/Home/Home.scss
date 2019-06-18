@@ -1,0 +1,9 @@
+@import '../../Scss/root';
+
+.home {
+	&__emoji {
+		height: auto;
+		width: 35px;
+		margin: 0 .25em;
+	}
+}

@@ -1,0 +1,19 @@
+@keyframes loading {
+	0% {
+		transform: translateY(-10%)
+	}
+
+	100% {
+		transform: translateY(0)
+	}
+}
+
+.loading {
+	margin: 1.5em 0;
+
+	&__image {
+		animation: loading .5s ease infinite alternate;
+		height: auto;
+		width: 65px;
+	}
+}

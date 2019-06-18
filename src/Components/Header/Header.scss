@@ -1,0 +1,23 @@
+@import '../../Scss/root';
+
+.header {
+	background-color: $secondary-color;
+	color: $primary-color;
+	padding: 1em;
+
+	&__logo {
+		height: auto;
+		width: 200px;
+	}
+
+	&__nav {
+		&-list {
+			align-items: center;
+			justify-content: space-between;
+			display: flex;
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

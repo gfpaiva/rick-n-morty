@@ -1,0 +1,46 @@
+@import '../../Scss/root';
+
+$padding-amount: 1rem;
+
+.card {
+	background-color: $secondary-color;
+	border-radius: 8px;
+	box-shadow: 0 15px 15px rgba(0, 0, 0, .55);
+	color: $primary-color;
+	overflow: hidden;
+	padding-bottom: $padding-amount;
+
+	&__title,
+	&__description { padding: 0 $padding-amount }
+
+	&__image {
+		min-height: 250px; // avoid jump
+		width: 100%;
+	}
+
+	&__title {
+		@include rfs(28);
+		font-weight: bold;
+	}
+
+	&__description {
+		& > * {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: nowrap;
+
+			& > span {
+				padding: .2em;
+
+				&:last-child { text-align: right }
+			}
+		}
+	}
+
+	&__info {
+		&-key {
+			font-weight: bold;
+			text-transform: capitalize;
+		}
+	}
+}

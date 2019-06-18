@@ -1,0 +1,23 @@
+@mixin luiza-gradient {
+	background: linear-gradient(
+		to right,
+		#fcd000 0,
+		#ff8a00 17%,
+		#ff253a 34%,
+		#ff37a8 51%,
+		#a400e1 67%,
+		#0086ff 83%,
+		#00d604 100%
+	)
+}
+
+@mixin square($size) {
+	width: $size;
+	height: $size;
+}
+
+@mixin hover-shadow {
+	transition: box-shadow .15s linear;
+
+	&:hover { box-shadow: 0px 7px 12px darken($dark-blue, 2%); }
+}

@@ -1,0 +1,43 @@
+@import './Scss/fonts',
+		'./Scss/root',
+		'~normalize.css/normalize.css',
+		'./Scss/helpers';
+
+
+html,
+body {
+	background: $secondary-color url('./bg.gif') repeat;
+	color: $text-color;
+	font-family: $fontFamily;
+}
+
+*,
+:after,
+:before { box-sizing: border-box }
+
+::selection {
+	background: #000;
+	color: #fff;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+
+	&.linked { text-decoration: underline }
+}
+
+.container {
+	margin: 0 auto;
+	max-width: $container;
+	width: 90%;
+}
+
+.page {
+	&__full-center {
+		align-items: center;
+		display: flex;
+		height: 100vh;
+		justify-content: center;
+	}
+}
