@@ -47,6 +47,8 @@ export default class Template extends Component {
 			isSearch: true,
 			completedQuery: false
 		});
+
+		e.target.search.blur();
 	}
 
 	handleComplete = () => {
