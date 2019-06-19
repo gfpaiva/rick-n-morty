@@ -22,13 +22,13 @@ export default function Header() {
 					</li>
 
 					<li className="header__nav-item">
-						<NavLink to="/locations">
+						<NavLink activeClassName="linked" to="/locations">
 							Localizações
 						</NavLink>
 					</li>
 
 					<li className="header__nav-item">
-						<NavLink to="/episodes">
+						<NavLink activeClassName="linked" to="/episodes">
 							Episódios
 						</NavLink>
 					</li>

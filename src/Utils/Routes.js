@@ -1,4 +1,4 @@
-import { Home, NotFound, Characters } from '../Pages';
+import { Home, NotFound, Characters, Locations, Episodes } from '../Pages';
 
 const routes = [
 	{
@@ -12,6 +12,18 @@ const routes = [
 		path: '/characters',
 		component: Characters,
 		key: 'characters'
+	},
+	{
+		exact: true,
+		path: '/episodes',
+		component: Episodes,
+		key: 'episodes'
+	},
+	{
+		exact: true,
+		path: '/locations',
+		component: Locations,
+		key: 'locations'
 	},
 	{
 		component: NotFound,

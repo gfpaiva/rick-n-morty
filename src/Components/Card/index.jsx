@@ -28,7 +28,10 @@ export default function Card({ title, image, children }) {
 
 Card.propTypes = {
 	title: PropTypes.string.isRequired,
-	image: PropTypes.string,
+	image: PropTypes.oneOfType([
+		PropTypes.string,
+		PropTypes.bool
+	]),
 	children: PropTypes.oneOfType([
 		PropTypes.arrayOf(PropTypes.node),
 		PropTypes.node

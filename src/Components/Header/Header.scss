@@ -1,6 +1,7 @@
 @import '../../Scss/root';
 
 .header {
+
 	background-color: $secondary-color;
 	color: $primary-color;
 	padding: 1em;
@@ -12,12 +13,22 @@
 
 	&__nav {
 		&-list {
+			@media screen and (max-width: 768px) { justify-content: center }
 			align-items: center;
 			justify-content: space-between;
 			display: flex;
 			list-style: none;
 			margin: 0;
 			padding: 0;
+		}
+
+		&-item {
+			@media screen and (max-width: 768px) {
+				display: none;
+
+				&:first-child { display: inline-block }
+			}
+
 		}
 	}
 }

@@ -14,8 +14,13 @@ $padding-amount: 1rem;
 	&__description { padding: 0 $padding-amount }
 
 	&__image {
+		display: block;
 		min-height: 250px; // avoid jump
 		width: 100%;
+
+		&-wrapper {
+			background-color: lighten($primary-color, 90%);
+		}
 	}
 
 	&__title {
