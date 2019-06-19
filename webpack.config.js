@@ -25,12 +25,6 @@ plugins.push(new HtmlWepackPlugin({
 if(isProduction) {
 	plugins.push(new webpack.optimize.ModuleConcatenationPlugin());
 	plugins.push(new MiniCssExtractPlugin({ filename: '[name].css' }));
-	plugins.push(new webpack.DefinePlugin({
-		'process.env':{
-			'NODE_ENV': JSON.stringify(process.env.NODE_ENV),
-			'MAPS_API_KEY': JSON.stringify(process.env.MAPS_API_KEY)
-		}
-	}));
 } else {
 	plugins.push(new Dotenv());
 }

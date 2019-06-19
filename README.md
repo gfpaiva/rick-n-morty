@@ -1,6 +1,6 @@
 # Rick-n-morty #
 
-[Rick-n-morty]() Explore o universo de Rick and Morty.
+[Rick-n-morty](https://gfpaiva-rick-n-morty.netlify.com/) Explore o universo de Rick and Morty.
 
 ## 🏃🏽‍♂️ Rodar projeto local
 
